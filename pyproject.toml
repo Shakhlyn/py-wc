@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "piping"
+version = "1.0.0"
+
+authors = [
+    {name = "sam"},
+]
+description = "Practice project for processing piping in command line"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["one", "two"]
+
+
+# dynamic = ["version"]
+
+[project.scripts]
+pipe = "piping.__main__:wc"
