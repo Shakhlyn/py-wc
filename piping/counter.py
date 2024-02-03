@@ -1,28 +1,33 @@
-# def get_file_type(file_path):
-#     _, file_extension = os.path.splitext(file_path)
-#     return file_extension
-
 """
-A Word counter tool that counts byte size, chars, words, lines from text, pdf files
+A Word counter tool that counts byte size, chars, words, lines from string
+
+text, pdf files
 """
 
-import os
+# import os
 
 
 class WC:
-    def __init__(self, input_file):
-        self.__input_file = input_file
-        self.__h_file = self.__read_file()
+    def __init__(self, h_file):
+        self.__h_file = h_file
+        # self.__h_file = Stringify(self.__input_file)
+        # self.__h_file = self.__read_file()
 
-    def __read_file(self):
-        with open(self.__input_file, "r", encoding="utf-8") as file:
-            return file.read()
+    # def __read_file(self):
+    #     with open(self.__input_file, "r", encoding="utf-8") as file:
+    #         return file.read()
 
+    # def byte_counter(self):
+    #     """
+    #     Counts the total byte of the input file in integer and return
+    #     """
+    #     byte_size = os.path.getsize(self.__input_file)
+    #     return byte_size
     def byte_counter(self):
         """
         Counts the total byte of the input file in integer and return
         """
-        byte_size = os.path.getsize(self.__input_file)
+        byte_size = len(self.__h_file)
         return byte_size
 
     def char_counter(self):
@@ -57,8 +62,9 @@ if __name__ == "__main__":
     FILE = "text.txt"
     wc = WC(FILE)
 
+    # SIZE = wc.byte_counter()
     CHAR = wc.char_counter()
     WORD = wc.word_counter()
     LINE = wc.line_counter()
-    
+
     print(CHAR, WORD, LINE)
