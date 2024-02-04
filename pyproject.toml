@@ -4,15 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "piping"
-version = "1.0.0"
+version = "1.1.0"
 
 authors = [
-    {name = "sam"},
+    {name = "Shakhlyn", email= "shakhlyn.sh.du@gmail.com"},
+    
 ]
-description = "Practice project for processing piping in command line"
+description = "Practice project for processing building wc tool similar to wc in UNIX"
 readme = "README.md"
 requires-python = ">=3.8"
-keywords = ["one", "two"]
+keywords = ["word-counter", "wc"]
 
 
 # dynamic = ["version"]
