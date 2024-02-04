@@ -22,3 +22,6 @@ venv/
 *.sln
 *.swp
 *.swo
+
+# TEST files:
+text.txt
