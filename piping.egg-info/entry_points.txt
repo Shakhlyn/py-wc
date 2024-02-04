@@ -1,0 +1,2 @@
+[console_scripts]
+pipe = piping.__main__:ccwc

@@ -1,8 +1,9 @@
 # import os
 import sys
 import argparse
-from counter import WC
-from string_generator import Stringify
+
+from piping.string_generator import Stringify
+from piping.counter import WC
 
 # # indentifying of the file:
 
@@ -84,10 +85,10 @@ def ccwc():
         if args.file:
             output += args.file
         print(output)
-        
+
     else:
         output = ""
-        output += f"{results["line"]}\t{results['word']}\t{results['byte_size']}\t{results["char"]}\t"
+        output += f"{results['line']}\t{results['word']}\t{results['byte_size']}\t{results['char']}\t"
         if args.file:
             output += args.file
         print(output)

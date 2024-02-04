@@ -18,4 +18,4 @@ keywords = ["one", "two"]
 # dynamic = ["version"]
 
 [project.scripts]
-pipe = "piping.__main__:wc"
+pipe = "piping.__main__:ccwc"
