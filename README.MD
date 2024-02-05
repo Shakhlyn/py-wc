@@ -53,11 +53,19 @@ source venv/Scripts/activate.
 ./venv/Scripts/activate.
 ```
 
+> N.B.: To deactivate the virtual env, type _**"deactivate"**_
+
 - Install the package  
   It is good to install in the **editable mode**. Installing in the editable mode ,i.e., **-e**, will let you see changes right after changing/updating the code.
 
 ```python
 python -m pip install -e .
+```
+
+## Uninstallation
+
+```python
+pip uninstall ccwc
 ```
 
 ## Usage
